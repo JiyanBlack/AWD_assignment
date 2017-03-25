@@ -46,3 +46,25 @@ Can add people to your friends list and get contact with then later on.
   * Wrestling 
   * Skiing 
   * Horse Racing 
+2. Games
+ * Party games
+ * Tabletop Games
+ * Arcade Games
+ * Computer Games
+ * Console Games
+ * Handheld games
+ * Mobile games
+ * Multiplayer games
+ * Singleplayer games
+3. Books
+ * Fiction
+ * Comedy
+ * Drama
+ * Horror
+ * Non-fiction
+ * Realistic fiction
+ * Romance novel
+ * Satire
+ * Tragedy
+ * Tragicomedy
+ * Fantasy
