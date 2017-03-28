@@ -9,62 +9,10 @@
 
 ## Register Page
 * Enter name, password
-* Can move forward or back to change inputs
-
-## Setting Page
 * Selecting the hobbies through a tree structure
 * Specify user's available time and location.
+* Can move forward or back to change inputs
+* Generating a page to summarize.
 
 ## Matching Page
 Can add people to your friends list and get contact with then later on.
-
-## Hobbies Tree
-1. Sports
-  * Football/Soccer
-  * Basketball
-  * Cricket
-  * Tennis
-  * Athletics
-  * Rugby
-  * Formula 1
-  * Boxing
-  * Ice Hockey
-  * Volleyball
-  * Golf
-  * Baseball
-  * American Football
-  * MMA
-  * MotoGP
-  * Field Hockey
-  * Badminton
-  * Cycling
-  * Swimming 
-  * Snooker 
-  * Table Tennis 
-  * Gymnastics 
-  * Handball
-  * Wrestling 
-  * Skiing 
-  * Horse Racing 
-2. Games
- * Party games
- * Tabletop Games
- * Arcade Games
- * Computer Games
- * Console Games
- * Handheld games
- * Mobile games
- * Multiplayer games
- * Singleplayer games
-3. Books
- * Fiction
- * Comedy
- * Drama
- * Horror
- * Non-fiction
- * Realistic fiction
- * Romance novel
- * Satire
- * Tragedy
- * Tragicomedy
- * Fantasy

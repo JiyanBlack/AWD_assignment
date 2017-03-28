@@ -2,12 +2,12 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-    context: path.resolve(__dirname, 'server/static/js'),
+    context: path.resolve(__dirname, 'server/static/assets/js'),
     entry: {
-        app: ['./client.js'],
+        app: ['./main.js'],
     },
     output: {
-        path:path.resolve(__dirname, 'server/static/js'),
+        path: path.resolve(__dirname, 'server/static/assets/js'),
         filename: './bundle.js',
     },
     devServer: {
@@ -24,3 +24,5 @@ module.exports = {
         }, ],
     },
 };
+
+console.log("Webpack is running on port: 8080")
