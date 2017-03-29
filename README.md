@@ -16,3 +16,14 @@
 
 ## Matching Page
 Can add people to your friends list and get contact with then later on.
+
+## Reference
+1. https://www.w3schools.com/css/css3_gradients.asp*/
+2. http://eloquentjavascript.net/
+3. https://webpack.github.io/docs/webpack-dev-server.html
+4. http://learn.shayhowe.com/html-css/
+5. http://weizhifeng.net/javascript-the-core.html
+6. https://validator.w3.org/
+7. https://www.google.com/fonts
+8. https://www.w3schools.com/css/default.asp
+9. https://www.w3schools.com/js/default.asp
