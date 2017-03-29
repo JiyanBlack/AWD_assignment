@@ -1,5 +1,7 @@
 var matchingDom = {
     "matchingForm": document.getElementById("matching-form"),
+    "match": document.getElementById("match"),
+    "reset": document.getElementById("reset")
 };
 
 var hobbies = {
@@ -84,11 +86,33 @@ var hobbies = {
     ]
 }
 
+var hobbyCheckboxes = {};
+
 function matchingRun() {
+    // create checkboxes from hobbies object
     Object.keys(hobbies).forEach(function(hobby) {
         var fieldset = createFieldSet(hobby);
         addCheckbox(fieldset, hobbies[hobby]);
         matchingDom.matchingForm.appendChild(fieldset);
+    });
+
+    // submit result
+    matchingDom.match.addEventListener("click", function(event) {
+        event.preventDefault();
+        var result = {};
+        // generate result
+        Object.keys(hobbyCheckboxes).forEach(function(key) {
+            if (hobbyCheckboxes[key].checked)
+                result[key] = 1;
+            else
+                result[key] = 0;
+        });
+        // generate alert string
+        var resultString = "";
+        Object.keys(result).forEach(function(onehobby) {
+            resultString = resultString + onehobby + " : " + result[onehobby] + "\n";
+        });
+        alert(resultString);
     });
 }
 
@@ -97,16 +121,30 @@ function addCheckbox(fieldset, hobbylist) {
         var checkboxSpan = createCheckbox(onehobby);
         fieldset.appendChild(checkboxSpan);
     });
-}
 
-function createCheckbox(content) {
-    var span = document.createElement("span");
-    var checkbox = document.createElement("input");
-    checkbox.setAttribute("type", "checkbox");
-    checkbox.setAttribute("value", content);
-    span.appendChild(checkbox);
-    span.appendChild(document.createTextNode(content));
-    return span;
+    function createCheckbox(content) {
+        var span = document.createElement("span");
+        var checkbox = document.createElement("input");
+        checkbox.setAttribute("type", "checkbox");
+        checkbox.setAttribute("value", content);
+        hobbyCheckboxes[content] = checkbox;
+        checkbox.addEventListener("change", function(event) {
+            var isChecked = event.target.checked;
+            if (isChecked) {
+                event.target.parentNode.style["font-weight"] = "bold";
+            } else {
+                event.target.parentNode.style["font-weight"] = "300";
+            }
+        });
+        matchingDom.reset.addEventListener("click", function(event) {
+            event.preventDefault();
+            checkbox.checked = false;
+            checkbox.parentNode.style["font-weight"] = "300";
+        });
+        span.appendChild(checkbox);
+        span.appendChild(document.createTextNode(content));
+        return span;
+    }
 }
 
 function createFieldSet(legend) {

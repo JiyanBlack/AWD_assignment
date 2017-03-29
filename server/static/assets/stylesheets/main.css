@@ -1,8 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
 html,
 body,
 div,
@@ -142,9 +137,6 @@ table {
   Custom styles
   ========================================
 */
-
-
-/*reference:https://www.w3schools.com/css/css3_gradients.asp*/
 
 body {
     background: #293f50;
@@ -336,6 +328,10 @@ p a {
   ========================================
 */
 
+.btn-container {
+    text-align: center;
+}
+
 .btn {
     border-radius: 5px;
     color: #fff;
@@ -343,13 +339,20 @@ p a {
     display: inline-block;
     font-weight: 400;
     letter-spacing: .5px;
-    margin: 0;
+    margin: 1em;
     text-transform: uppercase;
 }
 
 .btn-default {
     border: 0;
     background: #648880;
+    padding: 11px 30px;
+    font-size: 14px;
+}
+
+.btn-reset {
+    border: 0;
+    background: #d8710a;
     padding: 11px 30px;
     font-size: 14px;
 }
@@ -496,6 +499,9 @@ p a {
 
 .match-form fieldset {
     margin: 1em;
+    padding: 1em;
+    border: 1px solid #c6c9cc;
+    border-radius: 5px;
 }
 
 

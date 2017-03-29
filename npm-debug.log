@@ -1,0 +1,48 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'run',
+1 verbose cli   'dev' ]
+2 info using npm@3.10.10
+3 info using node@v6.10.0
+4 verbose run-script [ 'predev', 'dev', 'postdev' ]
+5 info lifecycle cits3403@0.0.1~predev: cits3403@0.0.1
+6 silly lifecycle cits3403@0.0.1~predev: no script for predev, continuing
+7 info lifecycle cits3403@0.0.1~dev: cits3403@0.0.1
+8 verbose lifecycle cits3403@0.0.1~dev: unsafe-perm in lifecycle true
+9 verbose lifecycle cits3403@0.0.1~dev: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;D:\Codes\AWD_assignment\node_modules\.bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\Program Files\nodejs\;C:\ProgramData\Anaconda3;C:\ProgramData\Anaconda3\Scripts;C:\ProgramData\Anaconda3\Library\bin;C:\Program Files\Git\cmd;C:\Users\anshi\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\anshi\AppData\Roaming\npm;C:\Program Files (x86)\Microsoft VS Code\bin
+10 verbose lifecycle cits3403@0.0.1~dev: CWD: D:\Codes\AWD_assignment
+11 silly lifecycle cits3403@0.0.1~dev: Args: [ '/d /s /c', 'webpack-dev-server --hot --inline' ]
+12 silly lifecycle cits3403@0.0.1~dev: Returned: code: 3221225786  signal: null
+13 info lifecycle cits3403@0.0.1~dev: Failed to exec dev script
+14 verbose stack Error: cits3403@0.0.1 dev: `webpack-dev-server --hot --inline`
+14 verbose stack Exit status 3221225786
+14 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:255:16)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at EventEmitter.emit (events.js:191:7)
+14 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:40:14)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at ChildProcess.emit (events.js:191:7)
+14 verbose stack     at maybeClose (internal/child_process.js:877:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+15 verbose pkgid cits3403@0.0.1
+16 verbose cwd D:\Codes\AWD_assignment
+17 error Windows_NT 10.0.14393
+18 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "run" "dev"
+19 error node v6.10.0
+20 error npm  v3.10.10
+21 error code ELIFECYCLE
+22 error cits3403@0.0.1 dev: `webpack-dev-server --hot --inline`
+22 error Exit status 3221225786
+23 error Failed at the cits3403@0.0.1 dev script 'webpack-dev-server --hot --inline'.
+23 error Make sure you have the latest version of node.js and npm installed.
+23 error If you do, this is most likely a problem with the cits3403 package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     webpack-dev-server --hot --inline
+23 error You can get information on how to open an issue for this project with:
+23 error     npm bugs cits3403
+23 error Or if that isn't available, you can get their info via:
+23 error     npm owner ls cits3403
+23 error There is likely additional logging output above.
+24 verbose exit [ 1, true ]
