@@ -27,3 +27,4 @@ Can add people to your friends list and get contact with then later on.
 7. https://www.google.com/fonts
 8. https://www.w3schools.com/css/default.asp
 9. https://www.w3schools.com/js/default.asp
+10. http://meyerweb.com/eric/tools/css/reset/
