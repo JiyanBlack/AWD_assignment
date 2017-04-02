@@ -90,34 +90,35 @@ var hobbyCheckboxes = {};
 
 function matchingRun() {
     // create checkboxes from hobbies object
-    Object.keys(hobbies).forEach(function(hobby) {
+    Object.keys(hobbies).forEach(function (hobby) {
         var fieldset = createFieldSet(hobby);
         addCheckbox(fieldset, hobbies[hobby]);
         matchingDom.matchingForm.appendChild(fieldset);
     });
 
     // submit result
-    matchingDom.match.addEventListener("click", function(event) {
+    matchingDom.match.addEventListener("click", function (event) {
         event.preventDefault();
         var result = {};
         // generate result
-        Object.keys(hobbyCheckboxes).forEach(function(key) {
+        Object.keys(hobbyCheckboxes).forEach(function (key) {
             if (hobbyCheckboxes[key].checked)
                 result[key] = 1;
             else
                 result[key] = 0;
         });
         // generate alert string
-        var resultString = "";
-        Object.keys(result).forEach(function(onehobby) {
+        var resultString = "See the dev console for more details.\n";
+        Object.keys(result).forEach(function (onehobby) {
             resultString = resultString + onehobby + " : " + result[onehobby] + "\n";
         });
+        console.log(resultString);
         alert(resultString);
     });
 }
 
 function addCheckbox(fieldset, hobbylist) {
-    hobbylist.forEach(function(onehobby) {
+    hobbylist.forEach(function (onehobby) {
         var checkboxSpan = createCheckbox(onehobby);
         fieldset.appendChild(checkboxSpan);
     });
@@ -128,7 +129,7 @@ function addCheckbox(fieldset, hobbylist) {
         checkbox.setAttribute("type", "checkbox");
         checkbox.setAttribute("value", content);
         hobbyCheckboxes[content] = checkbox;
-        checkbox.addEventListener("change", function(event) {
+        checkbox.addEventListener("change", function (event) {
             var isChecked = event.target.checked;
             if (isChecked) {
                 event.target.parentNode.style["font-weight"] = "bold";
@@ -136,7 +137,7 @@ function addCheckbox(fieldset, hobbylist) {
                 event.target.parentNode.style["font-weight"] = "300";
             }
         });
-        matchingDom.reset.addEventListener("click", function(event) {
+        matchingDom.reset.addEventListener("click", function (event) {
             event.preventDefault();
             checkbox.checked = false;
             checkbox.parentNode.style["font-weight"] = "300";

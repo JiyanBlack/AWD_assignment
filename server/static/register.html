@@ -3,6 +3,9 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Yan Ji 21824073">
+    <meta name="description" content="Find the people who share the common hobbies with you">
     <title>Register - Hobbies Matching</title>
     <link rel="stylesheet" href="assets/stylesheets/main.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
@@ -35,11 +38,13 @@
 
     <section class="row">
         <div class="grid">
-            <form class="col-3-3" onsubmit="" method="post">
+            <form class="col-3-3">
                 <fieldset class="register-group">
                     <label>User Name:<input type="text" id="username" name="name" placeholder="User Name" required /></label>
+                    <div class="col-3-3" id="username-hint"></div>
                     <label>Password<input type="password" id="password" name="password" placeholder="Password" required /></label>
-                    <label>Description of Yourself<textarea name="description" id="description"></textarea></label>
+                    <div class="col-3-3" id="password-hint"></div>
+                    <label>Tell us something about youself: <textarea name="description" id="description"></textarea></label>
                 </fieldset>
                 <div class="col-3-3" id="errorDiv"></div>
                 <div class="btn-container">
