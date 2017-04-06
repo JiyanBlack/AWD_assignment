@@ -1,21 +1,30 @@
-# AWD_assignment
+# AWD Assignment 1
 
 ## Introduction Page
 * A hobby based matching page, get to know the people who share the most common hobbies with you,
 * Matching people based on Hobbies(sports, egames, other games, other hobbies)
-* Matching based on available time and location.
-* For location and language, do not matter is also a valid option.
-* Matching people based on hobbies use K-Nearest-Neighbors alogorithm, and then filter through time and location.
+* Matching people based on hobbies use K-Nearest-Neighbors alogorithm or KdTree to find the near N-dimensional points.
 
 ## Register Page
-* Enter name, password
-* Selecting the hobbies through a tree structure
-* Specify user's available time and location.
-* Can move forward or back to change inputs
-* Generating a page to summarize.
+* Enter name, password, description
+* Validate rules:
+  * user name consists of 5-20 letters and numbers. 
+  * password can only be 8-20 numbers and letters.
+  * SQL injection prevention will be on the server-side.
+* One submit button.
 
+## Login Page
+* Enter name, password
+* Validate rules:
+  * user name consists of 5-20 letters and numbers. 
+  * password can only be 8-20 numbers and letters.
+  * SQL injection prevention will be on the server-side.
+* One submit button.
+  
 ## Matching Page
-Can add people to your friends list and get contact with then later on.
+* Selecting the hobbies through a tree structure
+* Two buttons: confirm and reset.
+* Result will display in the matching page as a list when the server side is done.
 
 ## Reference
 1. https://www.w3schools.com/css/css3_gradients.asp*/
