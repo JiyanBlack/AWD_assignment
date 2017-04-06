@@ -21,7 +21,7 @@ var validateFuncs = {
 };
 
 function registerRun() {
-    registerDom.submit.addEventListener('click', function (event) {
+    registerDom.submit.addEventListener('click', function(event) {
         event.preventDefault();
         clearError();
         var isValidUsername = validateUsername();
@@ -72,7 +72,6 @@ function validatePassword() {
     } else {
         return true;
     }
-
 }
 
 function dispMsg(msgs, errorDiv) {
