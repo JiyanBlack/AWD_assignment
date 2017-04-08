@@ -37,3 +37,7 @@
 8. https://www.w3schools.com/css/default.asp
 9. https://www.w3schools.com/js/default.asp
 10. http://meyerweb.com/eric/tools/css/reset/
+11. Pictures: 
+ * https://s-media-cache-ak0.pinimg.com/736x/57/48/7e/57487ed6d715132d0fd2c086ef25d5a5.jpg
+ * http://www.peepandthebigwideworld.com/static/images/games_only_btn.png
+ * https://img.clipartfest.com/981ae1ce51f56cf6aa3c693f9b9be44e_sports-high-school-sports-clipart_1430-1075.jpeg
